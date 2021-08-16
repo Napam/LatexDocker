@@ -5,8 +5,8 @@ RUN apt-get update && apt-get install -y \
     texlive-full \
     && apt-get -y autoremove && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /project
-ENV HOME=/project
+WORKDIR /latexproject
+ENV HOME=/latexproject
 
 ARG user=kanyewest
 ARG uid=1000
